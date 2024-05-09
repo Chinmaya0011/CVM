@@ -40,6 +40,7 @@ const{setIsVerified}=useContext(MyContext)
 
     return (
         <div className='voterVerify'>
+            <h1 className='verifyh1'>Verify Your Voter Id</h1>
             <div className='display'>{voterNo}</div>
             <div className="message" style={{ color: verificationMessage.includes('verified') ? 'green' : 'red' }}>
                 {verificationMessage}
@@ -61,6 +62,7 @@ const{setIsVerified}=useContext(MyContext)
         <li>Voter number should be 10 characters long.</li>
         <li>The first three characters should be letters (alphabets).</li>
         <li>The remaining seven characters should be numbers.</li>
+        <li style={{color:"red", marginTop:"5px"}}>EG:AAA1234567</li>
     </ul>
         </div>
     );
