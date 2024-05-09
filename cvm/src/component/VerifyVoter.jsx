@@ -56,6 +56,12 @@ const{setIsVerified}=useContext(MyContext)
                 <button onClick={verifyVoter} className='verifyButton'>Verify Voter</button>
                 <button onClick={resetVoterNo} className='resetButton'>Reset</button>
             </div>
+            <ul>
+        <li>Voter verification rule:</li>
+        <li>Voter number should be 10 characters long.</li>
+        <li>The first three characters should be letters (alphabets).</li>
+        <li>The remaining seven characters should be numbers.</li>
+    </ul>
         </div>
     );
 };

@@ -1,11 +1,25 @@
 .voterVerify {
-    font-family: Arial, sans-serif;
-    width: 420px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 420px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.3s ease; /* Adding transition for smoother hover effect */
+}
+
+.voterVerify:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow size */
+}
+
+
+
   .display {
     display: flex;
     align-items: center;
@@ -19,7 +33,23 @@
     border-radius: 20px;
     box-shadow: 4px 4px 4px 4px rgba(72, 49, 49, 0.147); /* Change values as needed */
   }
-  
+  /* VerifyVoter.css */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+justify-self:flex-start;
+  margin-bottom: 5px;
+}
+
+.message {
+  /* Your existing message styles */
+  /* Add or modify styles as needed */
+}
+
   
   
   

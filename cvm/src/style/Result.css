@@ -1,0 +1,24 @@
+.result-button {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff5f6d, #ffc371, #ff5f6d);
+    border: none;
+    color: #aa16d4;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for depth */
+  }
+  
+  .result-button:hover {
+    transform: translateY(-2px); /* Add a slight lift effect on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow size on hover */
+  }
+  

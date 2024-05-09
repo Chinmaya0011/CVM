@@ -8,11 +8,15 @@ function App() {
 
   return (
       <>
+      <div className='chinmaya'>
 <div className='myVote'>
         <VerifyVoter />
           <CandidateList /> 
           
-     </div> </>
+     </div> 
+     <Result/>
+     </div>
+     </>
   );
 }
 

@@ -11,7 +11,13 @@
 
     filter: blur(5px); /* Apply a blur effect */
   }
- 
+ .voted-message{
+  color: rgb(62, 0, 247);
+  font-weight: bold;
+  font-size: 26px;
+  padding: 4px;
+  margin-bottom: 10px;
+ }
   table {
    
     width: 100%;

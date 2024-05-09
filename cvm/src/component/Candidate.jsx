@@ -5,7 +5,8 @@ import { MyContext } from '../context/context';
 
 const Candidate = () => {
   const [votedCandidate, setVotedCandidate] = useState(null);
-  const { isVerified,setIsVerified, totalVote, setTotalVoted } = useContext(MyContext);
+  const [votedMessageVisible, setVotedMessageVisible] = useState(false);
+  const { isVerified, setIsVerified, totalVote, setTotalVoted } = useContext(MyContext);
 
   useEffect(() => {
     console.log("isVerified value changed to:", isVerified);
@@ -15,9 +16,14 @@ const Candidate = () => {
 
   const handleVoted = (ID) => {
     setVotedCandidate(ID);
-setTimeout(() => {
-  setIsVerified(false)
-}, 2000);
+    setVotedMessageVisible(true);
+
+    // Hide the voted message after 2 seconds
+    setTimeout(() => {
+      setVotedMessageVisible(false);
+      setIsVerified(false)
+    }, 2000);
+
     // Update total vote count
     setTotalVoted(prevVotes => {
       const updatedVotes = { ...prevVotes };
@@ -32,6 +38,9 @@ setTimeout(() => {
 
   return (
     <div className={`candidates-container ${blurContainer}`}>
+      {votedMessageVisible && (
+        <div className="voted-message" >Thanks for voting!</div>
+      )}
       <table>
         <thead>
           <tr>
