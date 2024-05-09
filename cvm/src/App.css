@@ -1,0 +1,17 @@
+.myVote {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto; /* This will center the div horizontally */
+gap:50px
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .myVote {
+        flex-direction: column; /* Change to column layout */
+        align-items: center;
+        justify-content: center;
+    }
+}
