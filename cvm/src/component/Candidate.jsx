@@ -6,7 +6,7 @@ import { MyContext } from '../context/context';
 const Candidate = () => {
   const [votedCandidate, setVotedCandidate] = useState(null);
   const [votedMessageVisible, setVotedMessageVisible] = useState(false);
-  const { isVerified, setIsVerified, totalVote, setTotalVoted } = useContext(MyContext);
+  const { isVerified, setIsVerified, totalVote, setTotalVoted,setSelectedParty } = useContext(MyContext);
 
   useEffect(() => {
     console.log("isVerified value changed to:", isVerified);
@@ -17,7 +17,7 @@ const Candidate = () => {
   const handleVoted = (ID) => {
     setVotedCandidate(ID);
     setVotedMessageVisible(true);
-
+    setSelectedParty(ID)
     // Hide the voted message after 2 seconds
     setTimeout(() => {
       setVotedMessageVisible(false);
