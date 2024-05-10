@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { MyContext } from '../context/context';
 import candidates from '../Data/candidateData';
-
+import "../style/SelectedParty.css"
 const SelectedParty = () => {
     const { selectedParty } = useContext(MyContext);
 
