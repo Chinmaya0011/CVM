@@ -1,0 +1,34 @@
+.header {
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 40px; /* Set height to 40px */
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .movingText {
+   
+    font-size: 40px;
+    font-weight: bolder;
+    font-size: larger;
+    position: absolute;
+color: rgb(255, 255, 255);
+    white-space: nowrap; /* Ensures the text does not wrap */
+    animation: moveLeftToRight 10s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  

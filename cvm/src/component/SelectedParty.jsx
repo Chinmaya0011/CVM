@@ -1,23 +1,24 @@
 import React, { useContext } from 'react';
 import { MyContext } from '../context/context';
 import candidates from '../Data/candidateData';
-import "../style/SelectedParty.css"
+import '../style/SelectedParty.css'
 const SelectedParty = () => {
     const { selectedParty } = useContext(MyContext);
 
-    // Filter candidates based on selectedParty and map over the filtered array to render JSX
-    const selectedCandidates = candidates
-        .filter(candidate => candidate.id === selectedParty)
-        .map(candidate => (
-            <div key={candidate.id}>
-                {candidate.logo}
-            </div>
-        ));
+    // Find the candidate matching the selectedParty
+    const selectedCandidate = candidates.find(candidate => candidate.id === selectedParty);
 
     return (
-        <div>
-            {selectedCandidates}
-        </div>
+        <div className='section9'>
+        {selectedCandidate ? (
+            <div className='selectedCandidate'>
+                {selectedCandidate.logo}
+            </div>
+        ) : (
+            <div className='selectedCandidate'></div>
+        )}
+    </div>
+    
     );
 }
 

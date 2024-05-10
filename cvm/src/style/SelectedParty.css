@@ -1,0 +1,23 @@
+/* SelectedParty.css */
+
+.section9 {
+    margin-top: 20px;
+  }
+  
+  .selectedCandidate {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: #ffffffb1; /* Gray background */
+    border: 2px solid #9999996d; /* Border */
+    border-style: ridge; /* 3D border style */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 100px; /* Font size */
+    box-shadow: 4px 4px 5px rgba(134, 97, 97, 0.3); /* Shadow */
+  }
+  
+  
+  
